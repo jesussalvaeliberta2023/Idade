@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="stylesheet" href="Idade.css">
+	    <title>Well's age cauculator</title>
+    </head>
+    <body>
+        <div id="boasVindas">
+            <h1 id="texto">Well's age cauculator</h1>
+        </div>
+
+        <div class="imagem">
+            <img src="Idade.png">
+        </div>
+        
+        <br><br>
+
+        <form onsubmit="return calcular(event)" class="box">
+            <label>Digite sua Idade:</label><br><br>
+            <input type="text" nome="idade" id="idade" placeholder="Exemplo: 18"/><br><br>
+
+            <input type="submit" value="Calcular Idade">
+        </form>
+
+        <div id="resultado" class="result"></div>
+
+        <script src="Idade.js"></script>
+    </body>
+
+</html>
