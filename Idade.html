@@ -14,18 +14,20 @@
         </div>
 
         <div class="orientações">
-           <h3>Digite sua idade abaixo e descubra</h3>
-            <h3>em qual fase da vida você está</h3> 
+            <h3>Digite sua idade abaixo e descubra</h3>
+            <h3>em qual fase da vida você está!</h3>
+            <h3>Use 0.0 para meses</h3>
+
         </div>
         
         <br><br>
 
         <form onsubmit="return calcular(event)" class="box">
+            <label>Digite seu nome:</label><br><br>
+            <input type="text" nome="nome" id="nome" placeholder="Exemplo: Elisângela"/><br><br>
+            
             <label>Digite sua Idade:</label><br><br>
             <input type="text" nome="idade" id="idade" placeholder="Exemplo: 100"/><br><br>
-
-            <label>Digite seu nome:</label><br><br>
-            <input type="text" nome="nome" id="nome" placeholder="Exemplo: Jesus"/><br><br>
 
             <input type="submit" value="Calcular Idade">
         </form>

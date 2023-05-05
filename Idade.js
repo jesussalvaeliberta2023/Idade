@@ -28,9 +28,12 @@ function calcular(event) {
     } else if (idade >= 21 && idade <= 64) {
         resultado = document.getElementById("resultado");
         resultado.innerHTML = "<br/> Seu nome é " + nome + " você tem " + idade + "<br/> anos, e você é um adulto!";
-    } else if (idade >= 65) {
+    } else if (idade >= 65 && idade <= 499) {
         resultado = document.getElementById("resultado");
         resultado.innerHTML = "<br/> Seu nome é " + nome + " você tem " + idade + "<br/> anos, e você é um idoso!";
+    } else if (idade >= 500) {
+        resultado = document.getElementById("resultado");
+        resultado.innerHTML = "<br/> Seu nome é " + nome + " você tem " + idade + "<br/> anos, e você é uma Divindade!";
     }
 
     document.getElementById("idade").value = "";

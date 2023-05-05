@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,100;1,300&display=swap');
+
 body {
-    width: 100%;
-    height: 100%;
-    background: rgb(47,156,223);
-    background: linear-gradient(-90deg, rgb(47, 129, 223) 0%, rgb(40, 135, 194) 31%, rgba(175,238,238,1) 100%);
+    width: 1920;
+    height: 937;
+    background-image: url(Fundo.png);
     justify-content: center;
 }
 
@@ -13,24 +14,24 @@ h1{
 }
 
 h3{
-    font-family: monospace;
+    font-family: Ysabeau;
     font-weight: bold;
     text-align: center;
 }
 
 label{
-    font-family: monospace;
+    font-family: Ysabeau;
     font-weight: bold;
 }
 
 input{
-    font-family: monospace;
+    font-family: Ysabeau;
     height: 35px;
     width: 200px;
     border: none;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 3px -3px #0084f0;
+    box-shadow: 3px -3px rgb(0, 132, 240);
 }
 
 form{
@@ -39,11 +40,11 @@ form{
 
 #resultado{
     text-align: center;
-    font-family: monospace;
+    font-family: Ysabeau;
     font-weight: bold;
 }
 
 .orientações{
-    font-family: monospace;
+    font-family: Ysabeau;
     font-size: 15px;
 }
