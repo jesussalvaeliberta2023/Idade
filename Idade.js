@@ -13,7 +13,7 @@ function calcular(event) {
 
     console.log(idade);
 
-    if (idade <= 1) {
+    if (idade <= 3) {
         resultado = document.getElementById("resultado");
         resultado.innerHTML = "<br/> Seu nome é " + nome + " você tem " + idade + "<br/> anos, e você é um bebê!";
     } else if (idade >= 4 && idade <= 11) {
