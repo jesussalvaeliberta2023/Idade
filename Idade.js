@@ -1,24 +1,38 @@
 var idade;
-var fase;
+var nome;
+var resultado;
 
 function calcular(event) {
     event.preventDefault();
     
     idade = parseFloat(document.getElementById("idade").value);
+    nome = parseFloat(document.getElementById("nome").value);
 
-    idade = idade
+    idade = (document.getElementById("idade").value)
+    nome = (document.getElementById("nome").value)
 
-    resultado = document.getElementById("resultado");
+    console.log(idade);
 
-    if (idade <= 11) {
-        resultado.innerHTML = "<br/> Seu resultado foi: " + idade.toFixed(2) + "<br/> Você é uma criança!";
-    } else if (idade >= 12 && idade <= 20) {
-        resultado.innerHTML = "<br/> Seu resultado foi: " + idade.toFixed(2) + "<br/> Você é um adolescente!";
+    if (idade <= 1) {
+        resultado = document.getElementById("resultado");
+        resultado.innerHTML = "<br/> Seu nome é " + nome + " você tem " + idade + "<br/> anos, e você é um bebê!";
+    } else if (idade >= 4 && idade <= 11) {
+        resultado = document.getElementById("resultado");
+        resultado.innerHTML = "<br/> Seu nome é " + nome + " você tem " + idade + "<br/> anos, e você é uma criança!";
+    } else if (idade >= 12 && idade <= 15) {
+        resultado = document.getElementById("resultado");
+        resultado.innerHTML = "<br/> Seu nome é " + nome + " você tem " + idade + "<br/> anos, e você é um adolescente!";
+    } else if (idade >= 16 && idade <= 20) {
+        resultado = document.getElementById("resultado");
+        resultado.innerHTML = "<br/> Seu nome é " + nome + " você tem " + idade + "<br/> anos, e você é um jovem!";
     } else if (idade >= 21 && idade <= 64) {
-        resultado.innerHTML = "<br/> Seu resultado foi: " + idade.toFixed(2) + "<br/> Você é um adulto!";
+        resultado = document.getElementById("resultado");
+        resultado.innerHTML = "<br/> Seu nome é " + nome + " você tem " + idade + "<br/> anos, e você é um adulto!";
     } else if (idade >= 65) {
-        resultado.innerHTML = "<br/> Seu resultado foi: " + idade.toFixed(2) + "<br/> Você é um idoso!";
+        resultado = document.getElementById("resultado");
+        resultado.innerHTML = "<br/> Seu nome é " + nome + " você tem " + idade + "<br/> anos, e você é um idoso!";
     }
 
     document.getElementById("idade").value = "";
+    document.getElementById("nome").value = "";
 }

@@ -43,10 +43,7 @@ form{
     font-weight: bold;
 }
 
-img{
-    height: 150px;    
-}
-
-.imagem{
-    text-align: center;
+.orientações{
+    font-family: monospace;
+    font-size: 15px;
 }
